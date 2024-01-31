@@ -666,7 +666,7 @@ class DefaultApi
 
             } else {
                 // for HTTP post (form)
-                $httpBody = GuzzleHttp\Psr7\Query::build($formParams);
+                $httpBody = \GuzzleHttp\build($formParams);
             }
         }
 
